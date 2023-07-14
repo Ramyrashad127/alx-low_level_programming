@@ -3,7 +3,7 @@
 /**
 * main - print digits
 *
-*Return: Always (success)
+* Return: Always (success)
 */
 int main(void)
 {
@@ -13,6 +13,6 @@ int main(void)
 	{
 		putchar(a);
 	}
-        putchar('\n');
+	 putchar('\n');
 	return (0);
 }
