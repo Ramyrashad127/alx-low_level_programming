@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - print alpghbet
@@ -11,7 +11,9 @@ int main(void)
 	for(char i = 'a'; i <= 'z'; i++)
 	{
 		if(i == 'q' || i == 'e')
+		{
 			continue;
+		}
 		putchar(i);
 	}
 
