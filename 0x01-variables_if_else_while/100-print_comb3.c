@@ -11,7 +11,7 @@ int main(void)
 
 	for (a = 1, b = 0; b <= 9; a++)
 	{
-		if (a == b|| a == 0)
+		if (a == b || a == 0)
 			continue;
 		putchar(b + 48);
 		putchar(a + 48);
