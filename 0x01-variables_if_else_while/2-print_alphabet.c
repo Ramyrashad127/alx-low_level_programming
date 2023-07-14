@@ -1,18 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
-* main - print alpghabet
-*
-*Return: Always (success)
-*/
+ * main - Prints the alphabetic
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
-	for (char i = 'a'; i <= 'z'; i++)
-	{
-		putchar(i);
-	}
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
 
 	putchar('\n');
-	return 0;
-	
+	return (0);
 }
