@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - print alpghbet
- *
- * Return: Always (access)
- */
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	char i;
+	char c;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (i == 'q' || i == 'e')
+		if (c != 'e' && c != 'q')
 		{
-			continue;
+			putchar(c);
 		}
-		putchar(i);
 	}
 
 	putchar('\n');
