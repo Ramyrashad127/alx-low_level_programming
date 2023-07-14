@@ -9,9 +9,9 @@ int main(void)
 {
 	char i;
 
-	for(i = 'a'; i <= 'z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		if(i == 'q' || i == 'e')
+		if (i == 'q' || i == 'e')
 		{
 			continue;
 		}
@@ -19,5 +19,6 @@ int main(void)
 	}
 
 	putchar('\n');
-	return 0;
+
+	return (0);
 }	
