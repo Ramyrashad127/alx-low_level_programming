@@ -1,23 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
-* main - print alpghabet
-*
-*Return: Always (success)
-*/
+ * main - Prints the alphabetic in lower and upper case
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
+	char c;
 
-	for (char i = 'a'; i <= 'z'; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(i);
+		putchar(c);
 	}
 
-	for (char i = 'A'; i <= 'Z'; i++)
+	for (c = 'A'; c <= 'Z'; c++)
 	{
-		putchar(i);
+		putchar(c);
 	}
+
 	putchar('\n');
-	return 0;
-	
+
+	return (0);
 }
