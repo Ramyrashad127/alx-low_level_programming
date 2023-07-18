@@ -6,11 +6,11 @@
  */
 void times_table(void)
 {
-	int x, y,re,s;
+	int x, y, re, s;
 
 	for (x = 0; x < 10; x++)
 	{
-		for (y = 1; y < 10; y++)
+		for (y = 0; y < 10; y++)
 		{
 			re = x * y;
 			if (re >= 10)
