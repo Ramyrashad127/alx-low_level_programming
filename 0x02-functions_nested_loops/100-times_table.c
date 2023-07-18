@@ -28,7 +28,7 @@ void print_times_table(int n)
 			}
 			else if (z >= 10 && z < 100)
 			{
-				re = z % 10;
+				re1 = z % 10;
 				z /= 10;
 				_putchar(z + 48);
 				_putchar(re1 + 48);
