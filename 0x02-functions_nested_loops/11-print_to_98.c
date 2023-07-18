@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * print_to_98 - print
  * @n;test
@@ -11,5 +12,6 @@ void print_to_98(int n)
 		printf("%d, ", n);
 		n++;
 	}
-	printf(n);
+	if (n == 98)
+		printf(98);
 }
