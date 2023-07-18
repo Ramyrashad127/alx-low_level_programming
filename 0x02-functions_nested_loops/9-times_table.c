@@ -22,9 +22,12 @@ void times_table(void)
 			}
 			else
 				_putchar(re + 48);
-			_putchar(' ');
+			if (y != 9 )
+			{
+				_putchar(' ');
+				_putchar(',');
+			}
 		}
 		_putchar('\n');
 	}
-
 }
