@@ -39,5 +39,3 @@ int main(void)
 	print_fib_x50();
 	return (0);
 }
-
-
