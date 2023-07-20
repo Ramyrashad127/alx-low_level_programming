@@ -9,7 +9,7 @@ int main(void)
 {
 	long unsigned int x = 612852475143, y = 0, i;
 
-	for (i = 2; i < 782849; i++)
+	for (i = 2; i <= 782849; i++)
 	{
 		while (x % i == 0)
 		{
