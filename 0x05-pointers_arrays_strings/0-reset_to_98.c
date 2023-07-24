@@ -1,4 +1,4 @@
-#define "main.h"
+#include "main.h"
 /**
  * reset_to_98 - test
  * @n: pointer
