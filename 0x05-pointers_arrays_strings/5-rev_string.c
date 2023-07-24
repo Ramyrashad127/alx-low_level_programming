@@ -17,6 +17,4 @@ void rev_string(char *s)
     *p = *q;
     *q = ch;
   }
-
-  return s;
 }
