@@ -4,18 +4,19 @@
  * @s: string
  * Return: null
  */
-void rev_string(char *s)
+char *reverse(char *s)
 {
-	char *s2, count = 0, i, c = 0;
+  char ch, *p, *q;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		s2[i] = s[i];
-		count++;
-	}
-	for (i = count - 1; i >= 0; i--)
-	{
-		s[c] = s2[i];
-		c++;
-	}
+  for (q = s; *q != '\0'; ++q)
+    ;
+  if (q > s)
+    --q;
+  for (p = s; p < q; ++p, --q) {
+    ch = *p;
+    *p = *q;
+    *q = ch;
+  }
+
+  return s;
 }
