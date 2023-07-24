@@ -4,7 +4,7 @@
  * @s: string
  * Return: null
  */
-char *reverse(char *s)
+void rev_string(char *s)
 {
   char ch, *p, *q;
 
