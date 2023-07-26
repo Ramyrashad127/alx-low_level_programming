@@ -1,20 +1,20 @@
-#include"main.h"
+#include"main"
 /**
- *
- * _strncat - cat
- * @dest: test
- * @src: test
- * @n: test
- * Return: string
+ * _strncat - function to concatenate strings
+ * @dest : pointer
+ * @src : pointer
+ * @n : variable integer
+ * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, c;
+	int a, b;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	for (a = 0; dest[a] != '\0'; a++)
 		;
-	for (c = 0; c < n; c++)
-		dest[c + i] = src[c];
-	dest[i + c] = '\0';
+	for (b = 0; b < n && src[b] != '\0'; b++)
+	{
+		dest[a + b] = src[b];
+	}
 	return (dest);
 }
