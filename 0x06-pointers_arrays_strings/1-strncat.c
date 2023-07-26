@@ -1,4 +1,4 @@
-#include"main"
+#include"main.h"
 /**
  * _strncat - function to concatenate strings
  * @dest : pointer
