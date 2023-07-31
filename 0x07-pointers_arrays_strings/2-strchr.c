@@ -8,7 +8,6 @@
  * Return: a pointer to the first occurance of the character @c in the string
  * @s. Return NULL if the character isn't found
  */
-
 char *_strchr(char *s, char c)
 {
 	while (*s)
