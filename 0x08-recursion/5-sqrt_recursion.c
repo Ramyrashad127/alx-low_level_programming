@@ -1,5 +1,4 @@
 #include "main.h"
-#include "holberton.h"
 /**
  * find_root - calculates i**i to check with n.
  * @n: base number.
