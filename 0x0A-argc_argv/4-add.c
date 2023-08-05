@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	long unsigned int sum = 0, j;
-	int x = 0, i;
+	long unsigned int j;
+	int x = 0, i, sum = 0;
 	char *arr;
 
 	for (i = 1; i < argc; i++)
@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
