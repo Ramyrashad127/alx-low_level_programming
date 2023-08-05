@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 	int x = 0, i = 0;
 	char *arr;
 
-	for (i = 1;i < argc;i++)
+	for (i = 1; i < argc; i++)
 	{
 		arr = argv[i];
-		for (j = 0;j < strlen(argv[i]);j++)
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
 			if (arr[j] < '0' || arr[j] > '9')
 				x = 1;
