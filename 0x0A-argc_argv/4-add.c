@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long unsigned int j;
+	unsigned long int j;
 	int x = 0, i, sum = 0;
 	char *arr;
 
