@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * main - print
  * @argc: size
@@ -7,12 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	char *s = argv[0];
-
-	for (i = 0; s[i] != '\0'; i++ )
-		_putchar(s[i]);
-	_putchar('\n');
-	(void) argc;
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }
