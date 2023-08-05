@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.hi>
 #include<stdlib.h>
 #include<string.h>
 /**
@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	long unsigned int sum = 0,j;
+	long unsigned int sum = 0, j;
 	int x = 0, i;
 	char *arr;
 
