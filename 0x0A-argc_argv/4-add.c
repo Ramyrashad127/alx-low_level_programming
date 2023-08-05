@@ -3,9 +3,9 @@
 #include<string.h>
 /**
  * main - p
- * @argc:test
- * @argv:test
- * Return:0
+ * @argc: test
+ * @argv: test
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			printf("Error\n");
-			return (1);
+			return (-1);
 		}
 	}
 	printf("%d\n", sum);
