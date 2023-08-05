@@ -32,6 +32,3 @@ int main(int argc, char *argv[])
 	printf("%ld\n", sum);
 	return (0);
 }
-
-
-
