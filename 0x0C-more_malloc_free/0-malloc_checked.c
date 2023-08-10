@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <limits.h>
 /**
- * malloc_checked - check
+ * *malloc_checked - check
  * @b:test
  * Return:pointer
  */
