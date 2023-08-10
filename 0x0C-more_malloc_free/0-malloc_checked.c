@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 /**
  * malloc_checked - check
  * @b:test
@@ -10,6 +13,5 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 		exit(98);
-
 	return (ptr);
 }
