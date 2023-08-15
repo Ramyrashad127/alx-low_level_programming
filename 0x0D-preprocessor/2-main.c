@@ -1,4 +1,4 @@
-#define <stdio.h>
+#include <stdio.h>
 /**
  * main - p
  *
@@ -7,4 +7,5 @@
 int main(void)
 {
 	printf("%s\n", __FILE__);
+	return (0);
 }
