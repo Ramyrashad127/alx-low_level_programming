@@ -1,12 +1,12 @@
-#include<stdlib.h>
-#include"dog.h"
+#include <stdlib.h>
+#include "dog.h"
 /**
- * init_dog - test
- * d: test
- * @name: test
- * @age:test
- * owner:test
- */
+  * init_dog - initialize struct dog.
+  * @d: name of struct
+  * @name: name of dog in struct
+  * @age: age of dog in struct
+  * @owner: name of owner of dog in struct
+  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d)
