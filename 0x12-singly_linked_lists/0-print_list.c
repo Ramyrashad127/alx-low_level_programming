@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_list - test
  * @h: test
@@ -7,7 +8,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t i = 0;
-	list_t* curr = h;
+	list_t *curr = h;
 
 	while (curr->next != NULL)
 	{
@@ -17,7 +18,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u] %s\n",curr->len )
+			printf("[%u] %s\n", curr->len);
 				curr = curr->next;
 		}
 		i++;
