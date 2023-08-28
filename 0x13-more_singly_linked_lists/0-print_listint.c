@@ -11,7 +11,7 @@ size_t print_listint(const listint_t *h)
 
 	if (!ptr)
 	{
-		free((void *)ptr)
+		free((void *)ptr);
 		return (0);
 	}
 	while (ptr != NULL)
