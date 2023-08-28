@@ -2,7 +2,6 @@
 /**
  * free_listint2 - free
  * @head:first
- * Return:null
  */
 void free_listint2(listint_t **head)
 {
