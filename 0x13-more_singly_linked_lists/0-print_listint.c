@@ -17,6 +17,6 @@ size_t print_listint(const listint_t *h)
 		num++;
 		ptr = ptr->next;
 	}
-	free(ptr);
+	free((void *)ptr);
 	return (num);
 }
