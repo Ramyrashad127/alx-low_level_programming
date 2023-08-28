@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_listint - print
- * @h: heade
- * Return: unsigned
+ * @h:head
+ * Return:num
  */
 size_t print_listint(const listint_t *h)
 {
@@ -12,8 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	if (!ptr)
 	{
-		free((void *)ptr);
-		return (0);
+		return(0);
 	}
 	while (ptr != NULL)
 	{
@@ -21,7 +20,5 @@ size_t print_listint(const listint_t *h)
 		num++;
 		ptr = ptr->next;
 	}
-	free((void *)ptr);
-	return (num);
+	return(num);
 }
- 
