@@ -1,8 +1,8 @@
 #include"lists.h"
 /**
  * free_listint2 - free
- * @head: first ele
- * Return: null
+ * @head:first
+ * Return:null
  */
 void free_listint2(listint_t **head)
 {
