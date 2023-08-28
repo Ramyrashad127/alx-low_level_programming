@@ -10,7 +10,10 @@ size_t print_listint(const listint_t *h)
 	const listint_t *ptr = h;
 
 	if (!ptr)
+	{
+		free((void *)ptr)
 		return (0);
+	}
 	while (ptr != NULL)
 	{
 		printf("%d\n", ptr->n);
