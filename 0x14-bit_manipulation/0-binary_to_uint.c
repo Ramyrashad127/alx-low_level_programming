@@ -1,7 +1,7 @@
 #include"main.h"
 #include<math.h>
 /**
- * int binary_to_uint - convert
+ * binary_to_uint - convert
  * @b: string
  * Return: d
  */
