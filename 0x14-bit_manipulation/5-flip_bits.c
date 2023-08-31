@@ -1,4 +1,4 @@
-#include"main.c"
+#include"main.h"
 /**
  * flip_bits - flip
  * @n: 1
@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while ( n != 0 || m != 0)
 	{
-		if (n & 1 != m & 1)
+		if ((n & 1) != (m & 1))
 			cnt++;
 		n = n >> 1;
 		m = m >> 1;
