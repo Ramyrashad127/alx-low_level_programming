@@ -9,9 +9,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fn;
 	char *s;
-	int n, r;
+	ssize_t n, r;
 
-	fn = fopen(filename,"r");
+	fn = fopen(filename, "r");
 	if (!fn)
 		return (0);
 	s = malloc(sizeof(char) * letters);
