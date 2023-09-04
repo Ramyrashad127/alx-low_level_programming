@@ -2,7 +2,7 @@
 /**
  * create_file - create
  * @filename:name
- * text_content:con
+ * @text_content:con
  * Return:1 or -1
  */
 int create_file(const char *filename, char *text_content)
