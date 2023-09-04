@@ -9,7 +9,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fn;
 	char *s;
-	int n;
+	int n, r;
 
 	fn = fopen(filename,"r");
 	if (!fn)
@@ -19,9 +19,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!s)
 		return (0);
 
-	fgets(s, letters, fn);
+	r = fread(s, 1, letters, fn);
 	fclose(fn);
-	n = write(1, s, letters);
+	n = write(1, s, r);
 
 	if (n == -1)
 		return (0);
