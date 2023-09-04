@@ -10,7 +10,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	int f;
 	ssize_t len = 0, res = 0;
 
-	while (text_content[rse] != '\0')
+	while (text_content[res] != '\0')
 		res++;
 	f = open(filename, O_WRONLY | O_APPEND);
 	if (n == -1)
