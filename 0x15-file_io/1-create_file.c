@@ -14,7 +14,7 @@ int create_file(const char *filename, char *text_content)
 		str = 0;
 	else
 	{
-		while (text_content != '\0')
+		while (text_content[str] != '\0')
 			str++;
 	}
 	if (!filename)
