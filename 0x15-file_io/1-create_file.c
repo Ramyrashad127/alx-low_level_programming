@@ -17,7 +17,8 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	while (text_content[str] != '\0')
 		str++;
-	i = write(fn, text_content, str);
+	if (str != 0)
+		i = write(fn, text_content, str);
 	close(fn);
 	if (i != str)
 		return (-1);
