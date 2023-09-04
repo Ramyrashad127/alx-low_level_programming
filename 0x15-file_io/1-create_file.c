@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	i = write(fn, text_content, str);
 	if (i != str)
 		return (-1);
-	close(fn)
+	close(fn);
 	return (1);
 }
 
