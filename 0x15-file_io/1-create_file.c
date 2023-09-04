@@ -10,11 +10,16 @@ int create_file(const char *filename, char *text_content)
 	int fn;
 	int str = 0, i = 0;
 
-	while (text_content[str] != '\0')
-		str++;
+	if (!text_content)
+		str = 0;
+	else
+	{
+		while (text_content != '\0')
+			str++;
+	}
 	if (!filename)
 		return (-1);
-	fn = open(filename, O_WRONLY | O_CREAT | O_TRUNC, IR_USER | IW_USER);
+	fn = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (fn == -1)
 		return (-1);
 	if (str != 0)
