@@ -2,7 +2,7 @@
 /**
  * delete_dnodeint_at_index - d
  * @head: head
- * @idx: index
+ * @index: index
  * Return: node
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -12,12 +12,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	while(test)
 	{
-		if (i == idx)
+		if (i == index)
 			break;
 		test = test->next;
 		i++;
 	}
-	if (i != idx)
+	if (i != index)
 		return (-1);
 	if (i == 0)
 	{
