@@ -5,6 +5,8 @@
  */
 void free_dlistint(dlistint_t *head)
 {
+	if (!head)
+		return;
 	dlistint_t *test = head->next;
 
 	while (test)
