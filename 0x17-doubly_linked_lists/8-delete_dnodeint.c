@@ -7,7 +7,7 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *test, *t;
+	dlistint_t *test, *t, *p;
 	unsigned int i = 0;
 
 	if (!*head)
@@ -32,7 +32,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	else
 	{
 		t = test->prev;
-		t->next = test->next;
+		p = test->next;
+		t->next = p;
+		p->prev = t;
 		free(test);
 	}
 	return (1);
