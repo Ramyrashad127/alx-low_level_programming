@@ -3,6 +3,7 @@
  * add_dnodeint - add
  * @head: head
  * @n: element
+ * Return: node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
