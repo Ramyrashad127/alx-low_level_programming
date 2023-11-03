@@ -49,15 +49,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 }
 /**
  * add_first - add
- * @test: array[index]
+ * @ht: array[index]
  * @key: key
  * @value: value
+ * @index:: innd
  * Return: 1 or 0
  */
-int add_first(hash_table_t *ht, const char *key, const char *value, unsigned long int index)
+int add_first(hash_table_t *ht, const char *key,
+		const char *value, unsigned long int index)
 {
 	hash_node_t *test = malloc(sizeof(hash_node_t));
-	
+
 	if (!test)
 		return (0);
 	test->key = malloc(sizeof(char) * strlen(key) + 1);
@@ -72,4 +74,3 @@ int add_first(hash_table_t *ht, const char *key, const char *value, unsigned lon
 	ht->array[index] = test;
 	return (1);
 }
-
