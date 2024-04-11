@@ -16,13 +16,13 @@ int binary_search(int *array, size_t size, int value)
 	while (st <= en)
 	{
 		printf("Searching in array: ");
-                for (j = st; j <= en; j++)
-                {
-                        printf("%d", array[j]);
-                        if (j != en)
-                                printf(", ");
-                }
-                printf("\n");
+		for (j = st; j <= en; j++)
+		{
+			printf("%d", array[j]);
+			if (j != en)
+				printf(", ");
+		}
+			printf("\n");
 		m = (st + en) / 2;
 		if (array[m] == value)
 			return (m);
